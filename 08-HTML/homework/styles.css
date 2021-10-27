@@ -1,0 +1,19 @@
+h1 {
+    color:firebrick;
+}
+
+img {
+    width: 400px;
+}
+
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color:gold;
+    padding: 50px;
+    border: 10px solid #545454;
+}
+
+#spanId {
+    font-size: 18px;
+}
