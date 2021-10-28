@@ -180,11 +180,13 @@ function esPositivo(numero) {
   if (numero === 0) {
     return false;
   }
-  else if (numero < 0){
+  else if (numero > 0) {
     return 'Es positivo';
-  } else if (numero > 0) {
+  }
+  else {
     return 'Es negativo';
   }
+}
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -233,7 +235,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1,20;
+  return euro * 1.2;
 }
 
 
@@ -249,7 +251,7 @@ function esVocal(letra){
   else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "Es vocal";
   }
-
+  return "Dato incorrecto";
 }
 
 
@@ -290,5 +292,5 @@ module.exports = {
   retornarPerimetro,
   areaDelTriangulo,
   deEuroAdolar,
-  esVocal
+  esVocal,
 };
